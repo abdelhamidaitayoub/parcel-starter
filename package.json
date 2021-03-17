@@ -1,0 +1,44 @@
+{
+  "name": "percel-bundler-tuto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "prebuild": "rm -rf dist",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Abdelhamid Ait-Ayoub (rrr3d)",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
+    "prettier": "^2.1.2",
+    "sass": "^1.27.2"
+  },
+  "customDistStructure": {
+    "config": {
+      "assets/js": [
+        ".js",
+        ".js.map"
+      ],
+      "assets/css": [
+        ".css",
+        ".css.map"
+      ],
+      "assets/img": [
+        ".jpg",
+        ".png"
+      ]
+    },
+    "options": {
+      "development": true
+    }
+  }
+}
